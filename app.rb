@@ -1,10 +1,6 @@
-require_relative 'animal'
-require_relative 'cachorro'
-puts'__Animal__'
-animal = Animal.new
-animal.pular
+﻿require_relative "produto"
+require_relative "mercado"
 
-puts'__Cachorro__'
-cachorro = Cachorro.new
-cachorro.pular
-cachorro.latir
+produto1 = Produto.new("sabao", 4 )
+mercado = Mercado.new(produto1)
+mercado.comprar
